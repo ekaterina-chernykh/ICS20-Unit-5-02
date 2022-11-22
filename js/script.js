@@ -19,7 +19,7 @@ if (navigator.serviceWorker) {
  * This function displays an alert.
  */
 function myButtonClicked() {
-  buttonPositiveChecked = document.getElementById("positive").checked
+  let buttonPositiveChecked = document.getElementById("positive").checked
 
   if (buttonPositiveChecked == true) {
     let randomNumber = Math.floor(Math.random() * 6) + 1
