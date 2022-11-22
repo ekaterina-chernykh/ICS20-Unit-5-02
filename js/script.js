@@ -19,11 +19,15 @@ if (navigator.serviceWorker) {
  * This function displays an alert.
  */
 function myButtonClicked() {
-  // input
-  const height = parseFloat(document.getElementById("height").value)
+  buttonPositiveChecked = document.getElementById('positive').checked
 
-  // process
-  const volume = 2
-  // output
-  document.getElementById("volume").innerHTML = "Volume is: " + volume + "mm³"
+  if (buttonPositiveChecked == true) {
+    let randomNumber = Math.floor(Math.random() * 6) + 1
+    document.getElementById("radio-button-value").innerHTML =
+    <p>"Value is: " + randomNumber</p> 
+  } else {
+    let randomNumber = Math.floor(Math.random() * -6) + 1
+    document.getElementById("radio-button-value").innerHTML =
+    <p>"Value is: " + randomNumber</p>
+  }
 }
