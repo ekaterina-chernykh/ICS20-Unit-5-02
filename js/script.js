@@ -26,7 +26,7 @@ function myButtonClicked() {
     document.getElementById("radio-button-value").innerHTML =
       "Value is: " + randomNumber
   } else {
-    let randomNumber = Math.floor(Math.random() * -6) + 1
+    let randomNumber = Math.floor(Math.random() * -6) - 1
     document.getElementById("radio-button-value").innerHTML =
       "Value is: " + randomNumber
   }
